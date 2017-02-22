@@ -1,0 +1,25 @@
+<!--
+@Author: Justin Schieck
+@Date:   2017-02-22T11:44:49-05:00
+@Email:  schieck91@gmail.com
+@Last modified by:   Justin Schieck
+@Last modified time: 2017-02-22T12:05:36-05:00
+-->
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+<link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" />
+
+
+<h1>Players</h1>
+
+<table class="table table-striped table-hover">
+    <tr><th>First Name</th><th>Last Name</th><th>Number</th></tr>
+
+    <% for (var i = 0; i < players.length; i++) { %>
+        <tr>
+            <td><%= players[i].firstName %></td>
+            <td><%= players[i].lastName %></td>
+            <td><%= players[i].number %></td>
+        </tr>
+    <% } %>
+
+</table>
